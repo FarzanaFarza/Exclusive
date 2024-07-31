@@ -28,26 +28,34 @@
                             <h1><a href="#">EXCLUSIVE</a></h1>
                         </logo>
                         <nav class="middle">
-                            <ul>
+                            <input type="checkbox" id="click">
+                            <label for="click" class="menu-btn">
+                                <i class="fas fa-bars"></i>
+                                </label>
+                            <ul class="menu">
                                 <li>
                                     <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
                                 </li>
                                 <li>
                                     <a href="#">About</a>
                                 </li>
                                 <li>
-                                    <a href="#">sign Up</a>
+                                    <a href="#">Contact Us</a>
                                 </li>
-                            </ul>
+                                <li>
+                                    <a href="#">Sign Up</a>
+                                </li>
+                             </ul>
                         </nav>
                         <nav class="right">
                             <div class="search-container">
                                 <div class="search">
-                                    <input type="text" id="search-input" placeholder="What are you looking for?">
-                                    <i class="fas fa-search"></i>
+                                    <form action="#">
+                                        <input type="search" placeholder="Category or Title" class="form_control" />
+                                        <button type="button" class="btn_search">
+                                            <i class="ri-search-2-line"></i>
+                                        </button>
+                                    </form>
                                 </div>
                                 <span>
                                     <i class="ri-shopping-cart-2-line"></i>
