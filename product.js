@@ -8,7 +8,7 @@ const productData = [
     },
     {
         id : 2,
-        image : "Images/cam(1).png",
+        image : "Images/Dslr.png",
         name : "CANON EOS DSLR Camera",
         price : "$360",
         rating : "Images/Frame 566 (4).png"
@@ -82,7 +82,7 @@ const productData = [
     },
     {
         id : 12,
-        image : "Images/Cart (3).png",
+        image : "Images/speaker.png",
         name : "RGB liguid CPU Cooler",
         price : "$160",
         rating : "Images/Frame 566 (2).png"
@@ -96,7 +96,7 @@ const productData = [
     },
     {
         id : 14,
-        image : "Images/cam(1).png",
+        image : "Images/Dslr.png",
         name : "CANON EOS DSLR Camera",
         price : "$360",
         rating : "Images/Frame 566 (4).png"
@@ -158,6 +158,7 @@ const inputEl = document.querySelector('.form_control');
 window.addEventListener("DOMContentLoaded" , () => { 
     let displayData = productData.map(function (cat_items) {
         return ` <div class="product-card">
+                <a href="#">
                     <div class="hover-image">
                          <img src="${cat_items.image}" alt="${cat_items.name}" />
                     <div class="hover-overlay">
@@ -169,6 +170,7 @@ window.addEventListener("DOMContentLoaded" , () => {
                         <p class="price">${cat_items.price}</p>
                         <img src="${cat_items.rating}" alt="Rating" />
                     </div>
+                </a>
                 </div>`;
     });
     displayData = displayData.join("");
@@ -199,3 +201,4 @@ btnEl.addEventListener ("click", (e) => {
         alert("please search the item or name !");
     }
 });
+

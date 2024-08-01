@@ -44,12 +44,14 @@ window.addEventListener("DOMContentLoaded", () => {
     let displayData = categoryData.map(function (cat_items) {
         return `<div class="category-section">
                     <ul>
+                    <a href="#">
                         <li>
                             <div class="img">
                                 <img src="${cat_items.image}" alt="" />
                             </div>
                             <h5><a href="#">${cat_items.category}</a></h5>
                         </li>
+                    </a>
                     </ul>
                 </div>`;
     });

@@ -152,12 +152,12 @@ header .bottom .right .search-container .search search-input::placeholder {
 header .bottom .right .search-container .search i {
 
 }
-header .bottom .right .search-container span {
+header .bottom .right .search-container a {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
-header .bottom .right .search-container span i {
+header .bottom .right .search-container a span {
 
 }
 hr {
@@ -272,9 +272,17 @@ hr {
     align-content: center;
 }
 #category .wrapper .category-section ul li .img {
-    width: 35%;
+    display: block;
+    width: 65%;
 }
-
+#category .wrapper .category-section ul li .img a {
+    display: block;
+    width: 65%;
+}
+#category .wrapper .category-section ul li .img a img {
+    display: block;
+    width: 100%;
+}
 
 
 main {
@@ -283,7 +291,7 @@ main {
 main .wrapper {
 
 }
-main .wrapper .container-products {
+main .wrapper a .container-products {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -326,7 +334,7 @@ hr {
     line-height: 2rem;
     justify-content: center;
 }
-.product-card {
+a .product-card {
     position: relative;
     overflow: hidden;
   }
@@ -349,7 +357,7 @@ hr {
     transition: opacity 0.3s ease;
   }
   
-  .product-card:hover .hover-overlay {
+ .product-card:hover .hover-overlay {
     opacity: 1;
   }
   
