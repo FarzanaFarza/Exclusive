@@ -68,7 +68,7 @@ const productData = [
     },
     {
         id : 10,
-        image : "Images/Frame 570 (1).png",
+        image : "Images/speaker.png",
         name : "AK-900 Wired Keyboard",
         price : "$960",
         rating : "Images/Frame 566 (4).png"

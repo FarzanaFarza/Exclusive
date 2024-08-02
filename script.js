@@ -75,7 +75,7 @@ const productData = [
     },
     {
         id : 2,
-        image : "Images/camera.png",
+        image : "Images/Dslr.png",
         name : "CANON EOS DSLR Camera",
         price : "$360",
         rating : "Images/Frame 566 (4).png"
@@ -133,19 +133,23 @@ const Container = document.querySelector('.container-products');
 //display all dynamic data
 window.addEventListener('DOMContentLoaded', () => {
     let displayData = productData.map(function(product_items){
-        return `<div class="products">
-                        <div class="pr-img">
-                            <img src="${product_items.image}" alt="" />
+        return `<a href="#" class="product-link">
+                    <div class="container-products">
+                        <div class="products">
+                            <div class="pr-img">
+                                <img src="${product_items.image}" alt="Product Image" />
+                                <div class="hover-button">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3 class="title">${product_items.name}</h3>
+                                <p class="price">${product_items.price}</p>
+                                <img src="${product_items.rating}" alt="" />
+                            </div>
                         </div>
-                        <div class="content">
-                            <h3 class="title">${product_items.name}</h3>
-                            <p class="price">${product_items.price}</p>
-                            <img src="${product_items.rating}" alt="" />
-                        </div>
-                        <div class="color">
-                            <img src="${product_items.color}" alt="" />
-                        </div>
-                </div>`;
+                    </div>
+                </a>`;
     });
     displayData = displayData.join("");
     Container.innerHTML = displayData;

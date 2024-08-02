@@ -286,15 +286,52 @@ hr {
 
 
 main {
-    padding: 4rem;
+    padding: 4rem; 
 }
 main .wrapper {
 
 }
-main .wrapper a .container-products {
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+.container-products {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+}
+.pr-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-button {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background-color: #000;
+}
+
+.products:hover .hover-button {
+    bottom: 0;
+}
+.content {
     line-height: 2rem;
 }
 hr {
