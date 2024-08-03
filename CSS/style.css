@@ -301,15 +301,15 @@ hr {
     display: grid;
     align-content: center;
 }
-#category .wrapper .category-section ul li .img {
+#category .wrapper .category-section ul li a {
+    
+}
+#category .wrapper .category-section ul li .cat_img {
     display: block;
     width: 65%;
+    justify-self: center;
 }
-#category .wrapper .category-section ul li .img a {
-    display: block;
-    width: 65%;
-}
-#category .wrapper .category-section ul li .img a img {
+#category .wrapper .category-section ul li .cat_img img {
     display: block;
     width: 100%;
 }

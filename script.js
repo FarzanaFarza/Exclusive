@@ -44,14 +44,12 @@ window.addEventListener("DOMContentLoaded", () => {
     let displayData = categoryData.map(function (cat_items) {
         return `<div class="category-section">
                     <ul>
-                    <a href="#">
                         <li>
-                            <div class="img">
+                            <a href="#" class="cat_img">
                                 <img src="${cat_items.image}" alt="" />
-                            </div>
+                            </a>
                             <h5><a href="#">${cat_items.category}</a></h5>
                         </li>
-                    </a>
                     </ul>
                 </div>`;
     });
@@ -133,8 +131,8 @@ const Container = document.querySelector('.container-products');
 //display all dynamic data
 window.addEventListener('DOMContentLoaded', () => {
     let displayData = productData.map(function(product_items){
-        return `<a href="#" class="product-link">
-                    <div class="container-products">
+        return ` <div class="container-products">
+                    <a href="#" class="product-link">
                         <div class="products">
                             <div class="pr-img">
                                 <img src="${product_items.image}" alt="Product Image" />
@@ -148,8 +146,8 @@ window.addEventListener('DOMContentLoaded', () => {
                                 <img src="${product_items.rating}" alt="" />
                             </div>
                         </div>
-                    </div>
-                </a>`;
+                    </a>
+                </div>`;
     });
     displayData = displayData.join("");
     Container.innerHTML = displayData;
